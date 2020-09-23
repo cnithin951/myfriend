@@ -1,0 +1,601 @@
+
+pytest filename.py# for testing module
+
+ 
+
+checkpoint = torch.load('PrivateTest_model.t7',map_location='cpu') # pytorch cpu version map loading
+
+=================================================================================================================================================
+PYTHON OFFLINE INSTALLTION
+
+An easy way with pip:
+
+Create an empty folder
+"""pip download torch""" using the connected computer. You'll get the pytorch package and all its dependencies.
+Copy the folder to the offline computer. You must be using the same python setup on both computers (this goes for virtual environments as well)
+"""pip install * """on the offline computer, in the copied folder. This installs all the packages in the correct order. You can then use pytorch.
+Note that this works for (almost) any kind of python package.
+=================================================================================================================================================
+
+you can install library by zip files also
+
+pip install zip file name
+
+we can run any project in colab because all library installed here
+
+
+we can install python library like this also
+
+pip install numpy scipy tensorflow
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+==================================================================================================================
+The author seems to have stopped support for this library, but I've found a solution which can be used until he updates it or accepts my fork.
+
+Download the zip from https://pypi.python.org/pypi/twitter-text-python/
+Extract it into any directory
+Open the file "setup.py" with your IDE/text editor of choice
+Change the line with open('README.rst') as f: to with open('README.rst', encoding='utf-8') as f:
+Compress the file
+Execute pip install <path to compressed file from last step>
+You could also use my compressed file if you're feeling lazy :-) :
+tweet-preprocessor-0.4.0.zip
+
+P.S. I claim no ownership to the file above and give all rights to the original author # IT S WORKING
+pip install put wheel file here
+==============================================================================================================================
+elastic search
+
+http://aa4ddc6c.ngrok.io/timesnow/_doc/RcD7qnABJ4VUgM2vyJ4g?pretty=true# this is for getting value
+
+http://aa4ddc6c.ngrok.io/timesnow/_search #this for search the index
+
+http://aa4ddc6c.ngrok.io/timesnow/_search?scroll=1m&pretty=true #fetching all the records
+===================================================================================================================
+
+
+data = request.get_json()# getting the json data from url post method.....
+==================================================================================================================
+
+TENSOR BOARD TUTORIAL...
+
+
+tensorboard --logdir=summaries # TO OPEN TENSORFLOW
+
+pip install notebook
+
+jupyter notebook
+
+ 
+
+===========================================================================================================================
+scrapy shell "http://quotes.toscrape.com/page/1/" in windows command prompt
+
+=======================================================================================
+
+
+how to create virtual environment in python.
+
+py -m pip install --user virtualenv
+==============================================================
+py -m venv env
+
+.\env\Scripts\activate #activate
+
+deactivate #deactivate
+
+
+pip install selenium flask elasticsearch# we can install library like this also
+
+====================================================================================
+
+
+this two library is needed for textract
+conda install swig
+conda install -c conda-forge poppler
+pip install pdftotext
+pip install EbookLib
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+new above
+=================================================================================================================
+
+imagePaths =list(paths.list_images('../input/data'))# kaggle dataset link to script
+!pip install tf-nightly-gpu
+pip install -I tensorflow #i means iqnored package
+
+from PIL import Image
+
+data #google colab reder put "data" or 'data' it works for me
+
+
+warnings.filterwarnings('ignore',category=FutureWarning)
+warnings.filterwarnings('ignore',category=DeprecationWarning)
+==================================================================================================================
+
+
+curl http://localhost:5000/predict/'filename or string '
+curl http://localhost:5000/predict/filename or string '
+===================================================================================================================
+python -m pip install scrapy
+scrapy startproject project_name
+scrapy shell
+#run the project within first folder
+scrapy crawl namewithin script
+put the scraping code within spider folder
+===========================================================================================================================
+import spacy
+
+# python -m spacy download en_core_web_sm
+nlp = spacy.load("en_core_web_sm")
+===================================================================================================================
+!unzip data.zip #this command for extracting zip file in google colab
+
+===============================
+import os, sys
+from google.colab import drive
+drive.mount('/content/mnt')
+nb_path = '/notebooks'
+os.symlink('/content/mnt/My Drive/Colab Notebooks', nb_path)
+sys.path.insert(0,nb_path)
+================================
+tensorflow version check
+
+
+import tensorflow as tf
+with tf.Session() as sess:
+devices = sess.list_devices()
+print(devices)
+==================================================================================================================
+TO DOWNLOAD STOP WORDS
+==> import nltk
+nltk.download('stopwords')
+==================================================================================================================
+"pytorch_installation"
+
+This worked for me on WIndows 10 64 bit with Python 3.7
+
+pip3 install https://download.pytorch.org/whl/cpu/torch-1.0.1-cp37-cp37m-win_amd64.whl
+
+
+#keras backend
+import os; os.environ['KERAS_BACKEND'] = 'theano' #to set back end theano
+os.environ['KERAS_BACKEND'] = 'tensorflow'
+
+=========================================================================================================================================================
+conda create -n env_senpy python=3.6
+activate env_senpy or conda activate env_senpy
+conda deactivate env_senpy
+========================================================================================================================================
+pip show tensorflow #this comment shows the information and version of the tensorflow
+
+========================================================================================================================================
+pipenv # this will create virtual env for project
+
+pipenv shell # for creating shell
+
+after shell created python app.py
+
+pipenv run python app.py
+
+pipenv install requirements.txt
+
+pipenv install flask
+
+
+5
+
+In your Terminal run ipython:
+
+ipython
+then locate your script and put there:
+
+%run your_script.ipynb
+
+========================================================================================================================================
+autopep8 #this model changes code automatically pep8 guide lines
+
+autopep8 --in-place --aggressive --aggressive filename.py # it automatically changes file through pep guide
+
+pycodesyle filename.py # this model checks pep8
+
+
+pip install tensorflow-cpu
+==================================================================================================================================
+conda install mingw libpython #this library for theano error
+
+
+pip install notebook
+Congratulations, you have installed Jupyter Notebook! To run the notebook, run the following command at the Terminal (Mac/Linux) or Command Prompt (Windows):
+
+jupyter notebook # this is the command
+
+pip install spacy && python -m spacy download en
+
+
+f= open("text.txt","r", encoding='utf-8-sig')
+myfile=f.read()
+
+===========================================================================================================================
+JustPaste.it
+User avatar
+@anonymous · Jan 22 · edited: Feb 21
+http://localhost:5000/?query=iamnothappy #rest api search 
+
+======================================================================================
+
+:::::: N L P libraries :::::::::
+
+pip install spacy  #
+
+======================================================================================
+
+"pytorch_installation"
+
+This worked for me on WIndows 10 64 bit with Python 3.7
+
+pip3 install https://download.pytorch.org/whl/cpu/torch-1.0.1-cp37-cp37m-win_amd64.whl
+
+pip show numpy
+
+=========================================================================================================================================================
+conda create -n env_senpy python=3.6
+activate env_senpy or conda activate env_senpy
+conda deactivate env_senpy
+========================================================================================================================================
+
+
+pip install psycopg2# this command for postgreesql
+
+pip install tensorflow --upgrade
+=================================================================================================================
+manage sessions in google colab shows current running
+
+====================================================================================================================================================
+o create an environment with a specific version of Python:
+=============================================================================================================================================================
+“pip install gensim” to install the gensim. If you do not have the permission to install systemwidely,
+use “pip install --user gensim” to install for yourself.
+Update by pip: pip install -U [package name].
+================================================================================================================================================================
+covert ipynb to .py python files
+
+Install ipython libraries
+> pip install ipython
+> pip install nbconvert
+Convert single file
+> ipython nbconvert — to script abc.ipynb
+You can have abc.py
+Convert multi files
+> ipython nbconvert — to script abc.ipynb def.ipynb
+abc.py, def.py
+> ipython nbconvert — to script *.ipynb
+abc.py, def.py
+All done!
+
+=========================================================================================
+python -c "import caffe;print caffe.__version__"
+
+python setup.py install
+
+conda install pip
+
+
+conda update conda
+
+conda create -n myenv python=3.6
+
+conda install --file requirements.txt
+
+conda activate emotiondetectatulpra
+
+conda deactivate
+
+conda install python=3.6.8
+
+
+conda install pytorch -c pytorch
+
+
+pip install --upgrade -r requirements.txt or ''''' pip install -r requirements.txt'''''
+
+pip install --upgrade https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.0.0-py3-none-any.whl
+
+python3 -m pip install --upgrade https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.12.0-py3-none-any.whl
+
+
+conda install TensorFlow
+=============================================================================================================================================================
+pip install tensorflow==1.5
+
+error no module named 'pywrap_tensorflow_internal'
+
+raise ImportError(_ERR_MSG.format(name), name=name)
+ImportError: No module named '_pywrap_tensorflow_internal'
+
+===============================================================================================================================================================
+
+
+virtualenv myvenv
+...
+$ source myvenv/bin/activate
+(myvenv) $ pip install django
+...
+(myvenv) $ pip freeze > requirements.txt
+
+pip install virtualenv
+
+pip freeze > requirements.txt #this command is used for creating requirements.text file
+
+we can run .sh shell script in windows also by using git bash
+
+
+miniconda installation we can bash command in windows
+
+to list conda virtual environment : conda info --envs
+
+==========================================================================================================================================================
+
+ 
+
+
+!python /content/drive/My Drive/Colab Notebooks/test.py
+
+
+%cd /content/drive/My Drive/Colab Notebooks
+%ls
+!python test.py
+
+from google.colab import files
+src = list(files.upload().values())[0]
+
+ 
+
+ 
+
+open('test.py','wb').write(src)
+import test
+!python test.py
+
+googledrive mount
+
+from google.colab import drive
+drive.mount('/content/drive')
+
+=========================================================================================================================================================
+
+============================================================================================================================================================
+"Dlib installation for windows"
+
+pip install cmake
+Install Visual Studio build tools from here. https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15#
+In Visual Studio 2017 go to the Individual Components tab, Visual C++ Tools for Cmake, and check the checkbox under the "Compilers, build tools and runtimes" section.
+pip install dlib
+or
+pip install https://pypi.python.org/packages/da/06/bd3e241c4eb0a662914b3b4875fc52dd176a9db0d4a2c915ac2ad8800e9e/dlib-19.7.0-cp36-cp36m-win_amd64.whl#md5=b7330a5b2d46420343fbed5df69e6a3f
+after cmake and in python 3.6
+
+pip install https://files.pythonhosted.org/packages/0e/ce/f8a3cff33ac03a8219768f0694c5d703c8e037e6aba2e865f9bae22ed63c/dlib-19.8.1-cp36-cp36m-win_amd64.whl#sha256=794994fa2c54e7776659fddb148363a5556468a6d5d46be8dad311722d54bfcf
+for python 3.6.6 without cmake installation
+
+https://stackoverflow.com/questions/41912372/dlib-installation-on-windows-10
+==============================================================================================================================================================
+pip is not recoginsed command (resolve)
+
+
+python -m pip install -r requirements.txt
+
+=========================================================================================================================================================================
+
+convert python2 to python3
+
+
+pip install 2to3
+
+2to3 -w filename.py
+
+it is converted
+
+=======================================================================================================================================================
+
+we can store python output in log file python hello.py >> hello.log
+
+=======================================================================================================================================================
+import pysnooper
+debugger
+import pdb #python debugger
+https://stackoverflow.com/questions/18640305/how-do-i-keep-track-of-pip-installed-packages-in-an-anaconda-conda-environment?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
+
+python -m pip --version
+
+=====================================================================================================================================================
+creating virtual environment in python
+
+py -m pip install --user virtualenv
+
+py -m venv env
+
+
+./env/Scripts/activate
+
+=======================================================================================================================================================
+
+how to run anaconda environment venv to windowscmd
+
+go to C:\Users\hhhhh\Anaconda3\condabin
+and activate
+
+env is activated we can run project
+
+
+or set path
+
+easily activate environment
+
+set path=C:\Users\hhhhh\Anaconda3\condabin
+
+activate environment_name
+
+https://stackoverflow.com/questions/20081338/how-to-activate-an-anaconda-environment
+======================================================================================================================================================
+sqlite3 database in linux
+
+ 
+
+
+$ ls
+$ sqlite3 test.db
+SQLite version 3.7.17 2013-05-20 00:56:22
+Enter ".help" for instructions
+Enter SQL statements terminated with a ";"
+sqlite> .tables
+sqlite> .exit
+$ ls
+test.db
+
+=======================================================================================================================================================
+
+ 
+
+
+python debugg statements
+
+
+import pdb; pdb.set_trace()
+
+========================================================================================================================================================
+
+pip install opencv-python version==4.1.2 or higher version
+
+torch installation in windows
+
+
+https://stackoverflow.com/questions/47754749/how-to-install-pytorch-in-windows/56172755
+
+============================================================================================================================================================
+cache removing in ubuntu
+rm -rf ~/.cache
+
+============================================================================================================================================================
+
+imutils installtion in windows
+
+conda install pip
+
+conda list keras
+pip install imutils
+
+
+===========================================================================================================================================================
+pip3 install scipy
+============================================================================================================================================================
+=
+
+
+To install a non-conda package:
+
+Activate the environment where you want to put the program:
+
+On Windows, in your Anaconda Prompt, run activate myenv.
+
+On macOS and Linux,in your terminal window, run conda activate myenv.
+
+To use pip to install a program such as See, in your terminal window or an Anaconda Prompt, run:
+
+pip install see
+To verify the package was installed, in your terminal window or an Anaconda Prompt, run:
+
+conda list
+If the package is not shown, install pip as described in Using pip in an environment and try these commands again
+
+ 
+
+
+============================================================================================================================================================
+video passing in opencv
+r"C:\Users\hhhhh\videos\testvdo.mp4"
+
+ 
+
+ 
+
+=======================================================================================================================================================
+we can copy env enivronment for one to another place it working
+
+ 
+
+
+============================================================================================================================================================
+************************************************************************************************************************************************************
+git commands and linux command
+
+git init
+
+git clone
+
+mkdir newfolder
+
+cd ..
+cd /
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+************************************************************************************************************************************************************
+============================================================================================================================================================
+this code for youtube video testing
+
+import pafy
+#url of the video to predict Age and gender
+url = 'https://www.youtube.com/watch?v=c07IsbSNqfI&feature=youtu.be'
+vPafy = pafy.new(url)
+play = vPafy.getbest(preftype="mp4")
+
+
+cap = cv2.VideoCapture(play.url)
+
+=============================================================================================================================================================
+emotion_model_path = '.\\trained_models\\emotion_models\\fer2013_mini_XCEPTION.102-0.66.hdf5'
+path
+
+
+pip show tensorflow #this comment shows the information and version of the tensorflow
+
+3 visits · 1 online
+© 2020 justpaste.it
+Account Terms Privacy Cookies Blog About
+© 2020 justpaste.it
+Account Terms Privacy Cookies Blog About

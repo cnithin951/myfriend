@@ -1,0 +1,23 @@
+pip install django
+pip install djangorestframework 
+django-admin startproject dailyblogapp
+
+cd dailyblogapp
+django-admin startapp blogapp
+cd ..
+
+
+# database sync
+python manage.py migrate
+
+
+#We'll also create an initial user named admin with a password of password123. We'll authenticate as that user later in our 
+
+python manage.py createsuperuser --email admin@example.com --username admin
+
+    
+    
+Add 'rest_framework' to INSTALLED_APPS in settings.py
+
+python manage.py runserver #running 
+http://127.0.0.1:8000/ # to view the the view
